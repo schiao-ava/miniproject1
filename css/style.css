@@ -1,0 +1,283 @@
+/* -------------------------------------------------------------------- File Name: style.css ----------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+/* @import url(font-awesome.min.css);
+@import url(owl.carousel.min.css); */
+
+/* ---------------------------------------------------------------------------- Basic --------------------------------------------------------------------------- */
+
+body {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  /* font-family: 'Raleway', sans-serif; */
+  line-height: 1.80857;
+  font-weight: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ------------------------------------------------------------------------- Header ------------------------------------------------------------------------- */
+
+header {
+  height: 105px;
+  background: #333333;
+  width: 100%;
+  padding: 33px 30px;
+}
+
+#img-logo {
+  max-width: 85%;
+  height: auto;
+}
+
+.header-nav {
+  color: rgb(219, 144, 4);
+  font-weight: bold;
+  font-size: large;
+}
+
+/* mouse over link */
+.header-nav:hover {
+  color: white;
+}
+
+/* ------------------------------------------------------------------------- Main ------------------------------------------------------------------------------ */
+
+/** carousel **/
+
+#carouselContainer {
+  margin: auto;
+  /* height: 2084px;
+  width: 3125px; */
+  justify-content: center;
+}
+
+.home {
+  background-color: rgba(189, 124, 70, 0.863);
+}
+
+/** about us **/
+
+.top_layer {
+  position: relative;
+}
+
+.about {
+  padding-top: 60px;
+}
+
+.about .titlepage p {
+  line-height: 24px;
+  padding-top: 14px;
+  color: #000;
+  font-weight: 400;
+  font-size: large;
+  margin-bottom: 50px;
+}
+
+.about_box {
+  padding: 20px 0;
+  box-shadow: 4px 0 27px rgba(02, 3, 8, 0.2);
+}
+
+.about_box_text {
+  padding-left: 50px;
+}
+
+.about_box_text h3 {
+  font-size: 27px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #0b0d0a;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+
+.about_box_text p {
+  font-size: 20px;
+  line-height: 32px;
+  color: #0b0d0a;
+  font-weight: 400;
+  padding-bottom: 35px;
+}
+
+.about_box_img {
+  padding: 35px 0;
+  margin-right: -60px;
+}
+
+.about_box_img figure {
+  margin: 0;
+}
+
+.about_box_img figure img {
+  width: 100%;
+}
+
+/** gallery **/
+
+.gallery_top {
+  position: relative;
+}
+
+.gallery {
+  padding-top: 60px;
+}
+
+.gallery .titlepage p {
+  line-height: 24px;
+  padding-top: 14px;
+  color: #000;
+  font-weight: 400;
+  font-size: large;
+  margin-bottom: 50px;
+}
+
+/** services */
+
+.services_top {
+  position: relative;
+}
+
+.services {
+  padding-top: 60px;
+}
+
+.services .titlepage p {
+  line-height: 24px;
+  padding-top: 14px;
+  color: #000;
+  font-weight: 400;
+  font-size: large;
+  margin-bottom: 50px;
+}
+
+.card-title {
+  font-size: 20px;
+}
+
+/** contact us **/
+
+.contact {
+  position: relative;
+  padding-top: 60px;
+  background: url(../img/BG/contact_bg.jpg);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-bottom: 350px;
+  height: 730px;
+}
+
+.contact .titlepage {
+  padding-bottom: 60px;
+}
+
+.contact .titlepage p {
+  line-height: 24px;
+  padding-top: 19px;
+  color: #000;
+  font-weight: 400;
+  font-size: large;
+}
+
+#c-bold {
+  font-size: 25px;
+  font-family: fantasy;
+  color: #e03c31;
+}
+
+/* ----------------------------------------------------------------------------- Footer -------------------------------------------------------------------------- */
+
+/** social icon **/
+
+footer {
+  background-color: #2e2e2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.icons {
+  display: flex;
+  column-gap: 25px;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
+  border-radius: 50%;
+  outline: 2px solid #fff;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
+}
+.icon:hover {
+  outline-offset: 4px;
+}
+.icon:hover i {
+  animation: shake 0.25px;
+}
+.icon--instagram:hover {
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  outline-color: #a02d76;
+}
+.icon--twitter:hover {
+  background-color: #1da1f2;
+  outline-color: #1da1f2;
+}
+.icon--linkedin:hover {
+  background-color: #0077b5;
+  outline-color: #0077b5;
+}
+.icon--facebook:hover {
+  background-color: #301ce4;
+  outline-color: #0a06f3;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(-15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(-15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+}
+
+/** design by **/
+.footer-text {
+  background-color: #2e2e2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  color: #fe5a1c;
+}
